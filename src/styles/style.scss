@@ -435,4 +435,17 @@ nav {
   text-transform: uppercase;
 }
 
+.footer {
+  margin-top: 20px;
+
+  a {
+    color: colors.$color-warning;
+    text-decoration: none;
+
+    &:hover{
+      color: #fff;
+    }
+  }
+}
+
 // 3 minutes présentation profil : 2 minutes présentation du site : 3 minutes d'une trace (1 projet)
