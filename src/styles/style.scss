@@ -52,7 +52,7 @@ h2 {
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;
   padding: 100px 20px;
-  margin: 150px 0 150px 0;
+  margin: 0 0 75px 0;
   min-height: 100vh;
 
   scroll-margin-top: 75px;
@@ -378,7 +378,7 @@ nav {
 
 .first{
   height: 100vh;
-  padding: 200px 20px;
+  padding: 200px 20px 0 0;
 
   .buttons {
     display: flex;
@@ -453,7 +453,7 @@ nav {
 
 // Media queries
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 500px){
   .container{
     padding: 0;
   }
@@ -462,10 +462,4 @@ nav {
     .container::-webkit-scrollbar {
         width: 5px;
     }
-
-  .left-column{
-    padding: 0;
-    margin: 0;
-  }
-
 }
