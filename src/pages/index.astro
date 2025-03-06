@@ -1,11 +1,324 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import CV from './cv.astro';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import '@/styles/style.scss';
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<html lang="fr">
+<head>
+  <title>Théo-Selim Chouabbia</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+<div class="container">
+
+  <nav class="navbar">
+    <ul>
+      <li class="fade-up delay-6"><a href="#projects">Projets</a></li>
+      <li class="fade-up delay-7"><a href="#curiculum">Curriculum Vitae</a></li>
+      <li class="fade-up delay-8"><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="first">
+    <h1 class="fade-up">Théo-Selim <span class="text-blue text-uppercase">Chouabbia</span></h1>
+    <h2 class="fade-up delay-3">Architecte Numérique & Développeur Full Stack.</h2>
+
+    <div class="buttons fade-up delay-10">
+      <a href="#projects" class="btn">Découvrir</a>
+    </div>
+  </div>
+
+  <div class="projects" id="projects">
+    <div class="project jeuluisance fade-right delay-4">
+      <button class="close-btn">&times;</button>
+      <h3>Luisance Sonore 2024</h3>
+      <p>Jeu vidéo pour le festival Luisance Sonore</p>
+      <p>Date : 2024</p>
+
+      <div class="project-content">
+        <h4>Technologies utilisées</h4>
+        <ul>
+          <li>JavaScript</li>
+          <li>Phaser</li>
+        </ul>
+        <p>
+          <b>Français :</b>
+        </p>
+        <p>
+          Un jeu web interactif servant de portail d'accès à la billetterie 2024 du festival Luisance Sonore. Développé avec Phaser, un puissant moteur de jeu JavaScript, cette expérience ludique offre une manière innovante et engageante d'accéder à la réservation de billets. L'application a été conçue pour être entièrement responsive, s'adaptant parfaitement à tous types d'écrans, des ordinateurs de bureau aux smartphones. Son interface intuitive prend en charge aussi bien les commandes clavier traditionnelles que les interactions tactiles, garantissant ainsi une expérience utilisateur fluide sur tous les appareils. Cette approche créative transforme le processus habituellement fonctionnel d'achat de billets en une expérience immersive et mémorable.
+        </p>
+        <p>
+          <b>English:</b>
+        </p>
+        <p>
+          Luisance Sonore is an interactive web game serving as a gateway to the 2024 ticketing platform. Developed with Phaser, a powerful JavaScript game engine, this playful experience offers an innovative and engaging way to access ticket reservations. The application has been designed to be fully responsive, adapting perfectly to all types of screens, from desktop computers to smartphones. Its intuitive interface supports both traditional keyboard controls and touch interactions, ensuring a smooth user experience on all devices. This creative approach transforms the typically functional process of purchasing tickets into an immersive and memorable experience.
+        </p>
+        <h4>Compétences liées</h4>
+        <ul>
+          <li>Choisir et implémenter des architectures adaptées</li>
+          <li>Maintenir l'application dans un environnement en production</li>
+          <li>Utiliser les bibliothèques adaptées au domaine d'application</li>
+        </ul>
+        <div class="footer">
+          <a href="https://www.auroria.luisancesonore.com" target="_blank" class="fade-up delay-6">Voir le site</a>
+        </div>
+      </div>
+    </div>
+    <div class="project bdp fade-left delay-5">
+      <button class="close-btn">&times;</button>
+      <h3>Batteriedeportable</h3>
+      <p>Refonte totale du design d'un site de vente de batteries</p>
+      <p>Date : 2024</p>
+      <div class="project-content">
+        <h4>Technologies utilisées</h4>
+        <ul>
+          <li>HTML/CSS</li>
+          <li>JavaScript</li>
+          <li>PHP</li>
+          <li>MySQL</li>
+        </ul>
+        <p>
+          Français
+        </p>
+        <p>
+          "Batterie de portable" est un site e-commerce créé en 2002, spécialisé dans la vente de batteries pour ordinateurs portables. Le projet a impliqué une refonte complète du design pour le rendre responsive et améliorer l'ergonomie.
+        </p>
+        <p>
+          Des fonctionnalités de paiement sécurisées ont été intégrées via plusieurs plateformes (PayPal, Stripe, Paybox), ainsi qu'un système de gestion des remboursements accessible depuis le backoffice. Un système de détection d'anomalies a été implémenté pour sécuriser les remboursements, permettant au directeur de déléguer cette tâche aux employés en toute confiance.
+        </p>
+        <p>
+          Des correctifs majeurs de sécurité ont été appliqués, et l'intégration de l'API OpenAI a permis d'optimiser le référencement naturel (SEO) du site.
+        </p>
+        <p>
+          English
+        </p>
+        <p>
+          "Batterie de portable" is an e-commerce website created in 2002, specializing in laptop batteries. The project involved a complete redesign to make it responsive and improve usability. Secure payment features were integrated through multiple platforms (PayPal, Stripe, Paybox), along with a refund management system accessible from the back office. An anomaly detection system was implemented to secure refunds, allowing the manager to confidently delegate this task to employees. Major security fixes were applied, and the integration of the OpenAI API has helped optimize the website's natural search engine ranking (SEO).
+        </p>
+
+        <h4>Compétences liées</h4>
+        <ul>
+          <li>Anticiper les résultats de diverses métriques (mémoire, temps d'exécution, etc.)</li>
+          <li>Profiler, analyser et justifier le comportement d'un code existant</li>
+          <li>Appliquer les principes d'accessibilités et d'ergonomie</li>
+          <li>Optimiser les modèles de données et assurer leur intégrité</li>
+        </ul>
+        <div class="footer">
+          <a href="https://www.batteriedeportable.com" target="_blank" class="fade-up delay-6">Voir le site</a>
+        </div>
+      </div>
+    </div>
+    <div class="project luisance fade-right delay-4">
+      <button class="close-btn">&times;</button>
+      <h3>Luisance Sonore</h3>
+      <p>Page artistique pour le festival Luisance Sonore</p>
+      <p>Date : 2025</p>
+
+      <div class="project-content">
+        <h4>Technologies utilisées</h4>
+        <ul>
+          <li>HTML/SCSS</li>
+          <li>JavaScript</li>
+          <li>Three.JS</li>
+        </ul>
+        <p>
+          <b>Français :</b>
+        </p>
+        <p>
+          "LUISANCE SONORE" dévoile l'univers musical à travers une expérience visuelle unique. Sur un fond anthracite, votre curseur génère une forme organique liquide qui révèle des fragments d'une image cachée, comme une peinture sonore qui se dessine au rythme de vos mouvements. Cette interface interactive annonce l'ouverture de la billetterie du festival, où chaque geste dévoile une partie du voyage sensoriel qui vous attend.
+        </p>
+        <p>
+          <b>English:</b>
+        </p>
+        <p>
+          "LUISANCE SONORE" unveils the musical universe through a unique visual experience. Against a dark anthracite background, your cursor generates an organic liquid form that reveals fragments of a hidden image, like a sonic painting that draws itself to the rhythm of your movements. This interactive interface announces the opening of the ticket office for our electronic music festival, where each gesture reveals a part of the sensory journey that awaits you.
+        </p>
+        <h4>Compétences liées</h4>
+        <ul>
+          <li>Rendre compte de son activité professionnelle</li>
+          <li>Élaborer une application informatique</li>
+          <li>Mettre en place des applications innovante</li>
+          <li>Identifier les critères de faisabilité d'un projet</li>
+        </ul>
+        <div class="footer">
+          <a href="https://www.auroria.luisancesonore.com" target="_blank" class="fade-up delay-6">Voir le site</a>
+        </div>
+      </div>
+    </div>
+    <div class="project ecoink fade-left delay-6">
+      <button class="close-btn">&times;</button>
+      <h3>EcoInk</h3>
+      <p>Site web e-commerce intégrant un backoffice pour la gestion</p>
+      <p>Date : 2025</p>
+
+      <div class="project-content">
+        <h4>Technologies utilisées</h4>
+        <ul>
+          <li>JavaScript</li>
+          <li>Vue.js</li>
+          <li>NestJS</li>
+          <li>MongoDB</li>
+          <li>Docker</li>
+        </ul>
+        <p>
+          <b>Français :</b>
+        </p>
+        <p>
+          EcoInk est un projet e-commerce développé dans le cadre de la SAE S5.A.01 en 3ème année de BUT Informatique. Cette application web permet la gestion et la vente de cartouches d'imprimantes. Le projet est structuré autour de deux composantes principales : un backend développé avec NestJS et MongoDB, et un frontend réalisé avec Vue.js. L'architecture suit le modèle Git Flow pour faciliter le développement collaboratif, et l'ensemble est déployé via Docker pour assurer la reproductibilité des environnements. Le système intègre une authentification JWT avec gestion des rôles utilisateurs, une API REST sécurisée, et une messagerie instantanée pour le service client. Le projet illustre l'application de compétences avancées en développement web, architecture logicielle et déploiement continu.</p>
+        <p>
+          <b>English:</b>
+        </p>
+        <p>
+          EcoInk is an e-commerce project developed as part of the SAE S5.A.01 course in the 3rd year of a Bachelor's Degree in Computer Science. This web application enables the management and sale of printer cartridges. The project is structured around two main components: a backend developed with NestJS and MongoDB, and a frontend built with Vue.js. The architecture follows the Git Flow model to facilitate collaborative development, and the entire system is deployed via Docker to ensure environment reproducibility. The system integrates JWT authentication with user role management, a secure REST API, and instant messaging for customer service. The project demonstrates the application of advanced skills in web development, software architecture, and continuous deployment.
+        </p>
+        <h4>Compétences liées</h4>
+        <ul>
+          <li>Organiser et partager une veille numérique</li>
+          <li>Définir une démarche de suivi de projet</li>
+          <li>Appliquer les principes d'accessibilités et d'ergonomie</li>
+          <li>Optimiser les modèles de données et assurer leur intégrité</li>
+        </ul>
+        <div class="footer">
+          <a href="#" target="_blank" class="fade-up delay-6">Bientôt disponible</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="curiculum fade-up delay-3">
+    <h3 class="t-white" id="curiculum">Curriculum Vitae</h3>
+    <CV />
+  </div>
+  <div class="contact fade-up delay-6">
+    <h3 id="contact">Contactez moi</h3>
+    <form>
+      <label for="name" class="fade-left delay-2">Nom</label>
+      <input type="text" placeholder="Nom" id="name" class="fade-right delay-3" />
+      <label for="email" class="fade-left delay-3">Email</label>
+      <input type="email" placeholder="Email" id="email" class="fade-right delay-4"/>
+      <label for="message" class="fade-left delay-4">Message</label>
+      <textarea placeholder="Message" id="message" class="fade-right delay-5"></textarea>
+      <button class="fade-up delay-6">Envoyer</button>
+    </form>
+  </div>
+</div>
+<div class="overlay"></div>
+
+<script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', () => {
+    const container = document.querySelector('.container');
+
+    container.addEventListener('mousemove', (e) => {
+      const x = (e.clientX / container.clientWidth) * 100;
+      const y = (e.clientY / container.clientHeight) * 100;
+
+      container.style.setProperty('--mouse-x', `${x}%`);
+      container.style.setProperty('--mouse-y', `${y}%`);
+    });
+
+    // Nouveau code pour les animations au scroll
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          // Optionnel : arrêter d'observer l'élément une fois animé
+          // observer.unobserve(entry.target);
+        } else {
+          // Commentez cette ligne si vous ne voulez pas que l'animation se répète
+          entry.target.classList.remove('visible');
+        }
+      });
+    }, observerOptions);
+
+    // Sélectionner tous les éléments avec des classes d'animation
+    const animatedElements = document.querySelectorAll('.fade-up, .fade-left, .fade-right');
+    animatedElements.forEach(el => observer.observe(el));
+
+    const projects = document.querySelectorAll('.project');
+    const overlay = document.querySelector('.overlay');
+
+    projects.forEach(project => {
+      project.addEventListener('click', (e) => {
+        if (e.target.classList.contains('close-btn')) {
+          return;
+        }
+
+        if (!project.classList.contains('active')) {
+          project.classList.add('active');
+          overlay.classList.add('active');
+          document.body.style.overflow = 'hidden';
+        }
+      });
+
+      const closeBtn = project.querySelector('.close-btn');
+      if (closeBtn) {
+        closeBtn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          closeProject(project);
+        });
+      }
+    });
+
+    overlay.addEventListener('click', () => {
+      const activeProject = document.querySelector('.project.active');
+      if (activeProject) {
+        closeProject(activeProject);
+      }
+    });
+
+    function closeProject(project) {
+      project.classList.remove('active');
+      overlay.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        const activeProject = document.querySelector('.project.active');
+        if (activeProject) {
+          closeProject(activeProject);
+        }
+      }
+    });
+  });
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const navbar = document.querySelector('nav');
+    // Remplacez '.container' par le sélecteur de votre div défilante
+    const container = document.querySelector('.container');
+
+    if (!navbar || !container) {
+      console.error("Navbar ou container non trouvé");
+      return;
+    }
+
+    function handleScroll() {
+      if (container.scrollTop > 50) {
+        navbar.classList.add('scrolled');
+        console.log('Classe "scrolled" ajoutée, scrollTop:', container.scrollTop);
+      } else {
+        navbar.classList.remove('scrolled');
+        console.log('Classe "scrolled" retirée, scrollTop:', container.scrollTop);
+      }
+    }
+
+    // Vérifier la position initiale
+    handleScroll();
+
+    // Ajouter l'écouteur d'événement sur le conteneur et non sur window
+    container.addEventListener('scroll', handleScroll);
+    console.log('Écouteur de défilement ajouté au conteneur');
+  });
+</script>
+</body>
+</html>
+<style lang="scss">
+  @use "../styles/style.scss" as *;
+</style>
